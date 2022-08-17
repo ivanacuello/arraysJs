@@ -1,0 +1,15 @@
+button {
+    background-color: pink;
+    color: white;
+    outline: auto;
+
+}
+
+.button-grey{
+    background-color: rgb(202, 106, 170);
+}
+.button-outline {
+    background-color: rgb(123, 211, 238);
+    outline: auto;
+}
+

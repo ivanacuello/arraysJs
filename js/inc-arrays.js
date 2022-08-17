@@ -1,4 +1,44 @@
 
+const titulo = document.getElementById("titulo")
+const parrafo = document.getElementById("parrafo")
+
+const botones = document.getElementsByClassName("button")
+
+function textoDeBotones() {
+    for (let button of buttons) {
+        console.log(boton.innerText)
+    }
+}
+
+function cargarTablaPrendas() {
+    const cuerpo = document.getElementById("cuerpo")
+
+        prendas.forEach(prenda => {
+            cuerpo.innerHTML += ` <tr>
+                                    <td>${prenda.id} </td>
+                                    <td>${prenda.nombre} </td>
+                                    <td>${prenda.importe} </td>
+                                  </tr>`
+
+        })
+}
+cargarTablaPrendas()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let Saludo = alert ("¡¡Bienvenido a Atica Moda!!")
 let aviso = confirm ("¿Desea ver nuestras nuevas prendas?")
         
