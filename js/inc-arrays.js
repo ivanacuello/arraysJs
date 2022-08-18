@@ -4,6 +4,8 @@ const parrafo = document.getElementById("parrafo")
 
 const botones = document.getElementsByClassName("button")
 
+const selectPrenda = document.querySelector("#selectPrenda")
+
 function textoDeBotones() {
     for (let button of buttons) {
         console.log(boton.innerText)
@@ -13,7 +15,7 @@ function textoDeBotones() {
 function cargarTablaPrendas() {
     const cuerpo = document.getElementById("cuerpo")
 
-        prendas.forEach(prenda => {
+        prendas.forEach(Prenda => {
             cuerpo.innerHTML += ` <tr>
                                     <td>${prenda.id} </td>
                                     <td>${prenda.nombre} </td>
@@ -25,12 +27,23 @@ function cargarTablaPrendas() {
 cargarTablaPrendas()
 
 
+function cargaArrayPrendas() {
+    prendas.forEach(Prenda => {
+        selectPrenda.innerHTML += `<option value="">${prendas}</option>`
+    })
+} 
+
+cargaArrayPrendas()
 
 
+// Botones 
 
+const botonListar = document.querySelector(".button")
+const botonAgregar = document.querySelector(".button.button-grey")
+const botonBuscar = document.querySelector(".button.button-outline")
+const botonQuitar = document.querySelector(".button.button-delete")
 
-
-
+botonAgregar.addEventListener("click", agregarPrendas)
 
 
 

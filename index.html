@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <script defer src="js/inc-arrays.js"></script>
+    <script defer src="js/eventos.js" ></script>
     
 
     <title>Atica Moda</title>
@@ -17,25 +18,23 @@
         <article class="" >
             <div class="" >
                 <div>
-                    <label for="lecPrenda">Prendas</label>
+                    <label for="selecPrenda">Prendas</label>
                     <select name="selectPrenda" id="selectPrenda">
                         <option value="" selected disabled>...</option>
-                        <option value="">Remera</option>
-                        <option value="">Campera</option>
-                        <option value="">Pantalon</option>
-                        <option value="">Pollera</option>
-                        <option value="">Body</option>
-                        <option value="">Polera</option>
-                        <option value="">Buzo</option>
-                        <option value="">Sweater</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    
+                        
                     </select>
                 </div>
             </div>
         </article>
+
+        <div>
+            <input type="number" id="codigo" placeholder="Código" >
+            <input type="text" id="descripcion" placeholder="Descripción del producto">
+            <input type="number" id="importe" placeholder="Importe">
+            <br><br>
+            <button class="button button-outline">cargar</button>
+        </div>
+
 
         <ul id="lista">
         </ul>
@@ -50,10 +49,10 @@
 
     </header>
     <main>
-        <button class="button" onclick="listarPrendas()" >Listar Prendas</button>
-        <button class="button button-grey" onclick="AgregarPrenda()" >Agregar Prenda</button>
-        <button class="button button-outline" onclick="buscarPrenda()" >Buscar Prenda </button>
-        <button class="button button-delete" onclick="quitarPrenda()" > Quitar Prenda</button>
+        <button class="button"  >Listar Prendas</button>
+        <button class="button button-grey"  >Agregar Prenda</button>
+        <button class="button button-outline"  >Buscar Prenda </button>
+        <button class="button button-delete"  > Quitar Prenda</button>
     
     </main>
 
